@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header><h1>Atletas</h1></header>
+    <header><h1>Principais Atletas</h1></header>
     <main>
       <section>
-        <input type="text" placeholder="digite o nome do atleta" />
-        <button>Pesquisar</button>
+        <input
+          type="text"
+          placeholder="digite o nome do atleta"
+          id="campo-pesquisa"
+        />
+        <button onclick="pesquisar()">Pesquisar</button>
       </section>
-
-      <section class="resultados-pesquisa">
-        <div class="item-resultado">
+      <section class="resultados-pesquisa" id="resultados-pesquisa">
+        <!-- <div class="item-resultado">
           <h2><a href="#">Neymar</a></h2>
           <p class="descricao-meta">
             Neymar Jr. é um jogador de futebol brasileiro, nascido em 1992,
@@ -142,13 +145,14 @@
             target="_blank"
             >Mais informações</a
           >
-        </div>
+        </div> -->
       </section>
     </main>
     <footer>
       <p>2024 - Atletas. Todos os direitos reservados</p>
       <p>Entre em contato pelo email: example@gmail.com</p>
     </footer>
+    <script src="./dados.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
